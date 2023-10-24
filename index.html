@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Quiz</title>
+    <style>
+        /* Add your styles here */
+        .btn {
+            margin: 5px;
+            padding: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="question-container">
+        <p id="question"></p>
+        <ul id="answer-buttons"></ul>
+    </div>
+    <p id="timer">Time left: <span id="timer-value"></span></p>
+    <button class="btn" onclick="submitAnswer()">Submit Answer</button>
+    <button class="btn" onclick="nextQuestion()">Next Question</button>
+    <p id="feedback"></p>
+
+    
+
+    <script src="quiz.js"></script>
+</body>
+</html>
